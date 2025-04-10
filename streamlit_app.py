@@ -54,7 +54,7 @@ def classificar_com_ia(texto_link):
 # Função para buscar links relevantes e filtrar com IA
 def buscar_editais(site, url):
     try:
-        response = requests.get(url, timeout=20)
+        response = requests.get(url, timeout=60)
         soup = BeautifulSoup(response.content, 'html.parser')
 
         resultados = []
